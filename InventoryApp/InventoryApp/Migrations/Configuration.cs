@@ -42,6 +42,42 @@ namespace InventoryApp.Migrations
             //};
             //itemCategorys.ForEach(s => context.ItemCategories.AddOrUpdate(s));
             //context.SaveChanges();
+            //var itemInformations = new List<ItemInformation>
+            //{              
+            // new ItemInformation{ItemCode = "I01",ItemName = "Coca-Cola",Remarks = "5Pcs",ItemCategoryId = 1},
+            // new ItemInformation{ItemCode = "I02",ItemName = "Nickon Pen",Remarks = "12pcs",ItemCategoryId = 2},
+            // new ItemInformation{ItemCode = "I03",ItemName = "Iphone4",Remarks = "2pcs",ItemCategoryId = 3}
+
+            //};
+            //itemInformations.ForEach(s => context.ItemInformations.AddOrUpdate(s));
+            //context.SaveChanges();
+            //var uoms = new List<Uom>
+            //{              
+            // new Uom{UomName= "Pcs"},
+            // new Uom{UomName = "Carton"},
+            // new Uom{UomName = "Box"},
+            // new Uom{UomName = "Kg"},
+            // new Uom{UomName= "Mtr"},
+            // new Uom{UomName = "Ft"},
+            // new Uom{UomName = "Inch"},
+            // new Uom{UomName = "SqInch"},
+            // new Uom{UomName= "Sqft"},
+            // new Uom{UomName = "SqMtr"},
+      
+
+            //};
+            //uoms.ForEach(s => context.Uoms.AddOrUpdate(s));
+            //context.SaveChanges();
+
+            var itemInformations = new List<ItemInformation>
+            {              
+             new ItemInformation{ItemCode = "I01",ItemName = "Coca-Cola",Remarks = "5Pcs",ItemCategoryId = 1,ItemTypeId = 1,UomId = 1},
+             new ItemInformation{ItemCode = "I02",ItemName = "Nickon Pen",Remarks = "12pcs",ItemCategoryId = 2,ItemTypeId = 2,UomId = 2},
+             new ItemInformation{ItemCode = "I03",ItemName = "Iphone4",Remarks = "2pcs",ItemCategoryId = 3,ItemTypeId = 3,UomId = 3}
+
+            };
+            itemInformations.ForEach(s => context.ItemInformations.AddOrUpdate(s));
+            context.SaveChanges();
 
         }
     }

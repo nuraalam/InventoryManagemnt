@@ -134,6 +134,7 @@
     <Compile Include="Controllers\ClientInformationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ItemCategoryController.cs" />
+    <Compile Include="Controllers\ItemInformationController.cs" />
     <Compile Include="Controllers\SupplierInformationController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -162,11 +163,34 @@
     <Compile Include="Migrations\201412230647036_update-itemcategorys.Designer.cs">
       <DependentUpon>201412230647036_update-itemcategorys.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201412230952551_iteminformations.cs" />
+    <Compile Include="Migrations\201412230952551_iteminformations.Designer.cs">
+      <DependentUpon>201412230952551_iteminformations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412231006296_update-iteminformations.cs" />
+    <Compile Include="Migrations\201412231006296_update-iteminformations.Designer.cs">
+      <DependentUpon>201412231006296_update-iteminformations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412231051432_itemtypes.cs" />
+    <Compile Include="Migrations\201412231051432_itemtypes.Designer.cs">
+      <DependentUpon>201412231051432_itemtypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412231101569_uoms.cs" />
+    <Compile Include="Migrations\201412231101569_uoms.Designer.cs">
+      <DependentUpon>201412231101569_uoms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412231112229_update-itemsWithTypeAndUom.cs" />
+    <Compile Include="Migrations\201412231112229_update-itemsWithTypeAndUom.Designer.cs">
+      <DependentUpon>201412231112229_update-itemsWithTypeAndUom.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ClientInformation.cs" />
     <Compile Include="Models\ItemCategory.cs" />
+    <Compile Include="Models\ItemInformation.cs" />
+    <Compile Include="Models\ItemType.cs" />
     <Compile Include="Models\ProjectDb.cs" />
     <Compile Include="Models\SupplierInformation.cs" />
+    <Compile Include="Models\Uom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +252,11 @@
     <Content Include="Views\ItemCategory\Details.cshtml" />
     <Content Include="Views\ItemCategory\Edit.cshtml" />
     <Content Include="Views\ItemCategory\Index.cshtml" />
+    <Content Include="Views\ItemInformation\Create.cshtml" />
+    <Content Include="Views\ItemInformation\Delete.cshtml" />
+    <Content Include="Views\ItemInformation\Details.cshtml" />
+    <Content Include="Views\ItemInformation\Edit.cshtml" />
+    <Content Include="Views\ItemInformation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -254,6 +283,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201412230647036_update-itemcategorys.resx">
       <DependentUpon>201412230647036_update-itemcategorys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412230952551_iteminformations.resx">
+      <DependentUpon>201412230952551_iteminformations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412231006296_update-iteminformations.resx">
+      <DependentUpon>201412231006296_update-iteminformations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412231051432_itemtypes.resx">
+      <DependentUpon>201412231051432_itemtypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412231101569_uoms.resx">
+      <DependentUpon>201412231101569_uoms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412231112229_update-itemsWithTypeAndUom.resx">
+      <DependentUpon>201412231112229_update-itemsWithTypeAndUom.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

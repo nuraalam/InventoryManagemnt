@@ -20,6 +20,7 @@ namespace InventoryApp.Models
         [DisplayName("Category Name")]
         public string ItemCategoryName { get; set; }
         public string Remarks { get; set; }
+        public virtual ICollection<ItemInformation> ItemInformations { get; set; }
 
     }
 }
